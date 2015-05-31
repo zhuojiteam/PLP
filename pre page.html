@@ -29,13 +29,19 @@ $(function(){
 
 <div id="container">
     <div class="section">
-        <div class="slide"><h3>Brief Introduction</h3></div>
-        <div class="slide"><h3>第二屏的第二屏</h3></div>
-        <div class="slide"><h3>第二屏的第三屏</h3></div>
+        <div class="slide">
+            <h3>Brief Introduction</h3>
+        </div>
+        <div class="slide">
+            <h3>第二屏的第二屏</h3>
+        </div>
+        <div class="slide">
+            <h3>第二屏的第三屏</h3>
+        </div>
     </div>
 	<div class="section">
         <canvas></canvas>
-        <iframe src="index.html" scrolling="no" frameborder="0"></iframe>
+        <iframe src="index.html" scrolling="no" frameborder="0" seamless=""></iframe>
 	</div>
 	<div class="section">
         <canvas></canvas>
@@ -46,26 +52,6 @@ $(function(){
 		<p>这是最后一屏</p>
 	</div>
 </div>
-
-<script src="trianglify.min.js"></script>
-<script>
-    var pattern = Trianglify({
-        width: window.innerWidth,
-        height: window.innerHeight
-    });
-    document.body.appendChild(pattern.canvas())
-</script>
-
-
-
-
-
-
-
-
-
-<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
-<a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>
 
 </body>
 </html>
