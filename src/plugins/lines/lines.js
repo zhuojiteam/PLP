@@ -40,7 +40,12 @@ d3.svg.BubbleChart.define("lines", function (options) {
           .classed(f.classed)
           .style(f.style)
           .attr(f.attr)
-          .text(function (d) {return d.item[f.textField];});
+          .text(function (d) {
+            if(isNaN(d.item[f.textField]))
+              return d.item[f.textField];
+            else
+              return d.item[f.textField]+"%";
+          });
       });
       return fn;
     };

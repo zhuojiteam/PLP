@@ -1,4 +1,4 @@
-@CHARSET "ISO-8859-1";
+@CHARSET "UTF-8";
 /* Reset CSS
  * --------------------------------------- */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
@@ -63,6 +63,14 @@ h1{
 }
 p{
 	font-size: 2em;
+}
+.intro {
+	position: absolute;
+	top:50%;left:50%;
+	width: 1024px;
+	color: "#4d4d4d";
+	
+	transform:translate(-50%, -50%);
 }
 .intro p{
 	width: 50%;
