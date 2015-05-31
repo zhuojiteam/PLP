@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Programming Language Popluarity</title>
+<link rel="stylesheet" href="fullpage/css/jquery.fullPage.css">
+<style>
+    .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+    canvas{
+        position: absolute;
+    }
+</style>
+<script src="fullpage/js/jquery-1.8.3.min.js"></script>
+<script src="fullpage/js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$('#container').fullpage({
+		sectionsColor: ['#000', '#000', '#000', '#000']
+	});
+});
+</script>
+</head>
+
+<body>
+
+<div id="container">
+    <div class="section">
+        <div class="slide"><h3>Brief Introduction</h3></div>
+        <div class="slide"><h3>第二屏的第二屏</h3></div>
+        <div class="slide"><h3>第二屏的第三屏</h3></div>
+    </div>
+	<div class="section">
+        <canvas></canvas>
+        <iframe src="index.html" scrolling="no" frameborder="0"></iframe>
+	</div>
+	<div class="section">
+        <canvas></canvas>
+        <iframe src="java/java.html" scrolling="no" frameborder="0"></iframe>
+	</div>
+	<div class="section">
+		<h3>第四屏</h3>
+		<p>这是最后一屏</p>
+	</div>
+</div>
+
+<script src="trianglify.min.js"></script>
+<script>
+    var pattern = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight
+    });
+    document.body.appendChild(pattern.canvas())
+</script>
+
+
+
+
+
+
+
+
+
+<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
+<a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>
+
+</body>
+</html>
